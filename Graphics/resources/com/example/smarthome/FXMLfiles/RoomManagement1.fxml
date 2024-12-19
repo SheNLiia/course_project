@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome.RoomManagement1Controller">
+    <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0">
+         <image>
+            <Image url="@../Pictures/bg.jpg" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="720.0" fitWidth="1440.0" layoutX="73.0" layoutY="79.0">
+            <image>
+                <Image url="@../Pictures/Rooms/EmptyFirstRoom.png" />
+            </image>
+        </ImageView>
+      <Pane fx:id="adminPane" layoutX="14.0" layoutY="13.0" prefHeight="99.0" prefWidth="334.0">
+         <children>
+            <TextField fx:id="adminTextField" layoutX="102.0" layoutY="43.0" prefHeight="55.0" prefWidth="232.0" promptText="Введите SQL запрос">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="queryButton" alignment="BASELINE_CENTER" layoutY="48.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="95.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Запрос" textAlignment="CENTER" textFill="#2f5597">
+               <effect>
+                  <DropShadow height="12.0" radius="5.5" width="12.0">
+                     <color>
+                        <Color opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="Ink Free" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="45.0" text="SQL запросы для админа" textAlignment="CENTER" textFill="#2f5597">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+        <ScrollPane fx:id="menuScrollPane" layoutX="39.0" layoutY="621.0" prefHeight="147.0" prefWidth="238.0" style="-fx-background-color: #d6dce5;" visible="false">
+            <content>
+                <VBox prefHeight="231.0" prefWidth="220.0" style="-fx-background-color: #d6dce5;">
+                    <children>
+                        <CheckBox fx:id="thermohygrometerCB" mnemonicParsing="false" text="Термогигрометр">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="heaterCB" mnemonicParsing="false" text="Обогреватель">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="conditionerCB" mnemonicParsing="false" text="Кондиционер">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="humidifierCB" mnemonicParsing="false" text="Увлажнитель">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="fanCB" mnemonicParsing="false" text="Вентилятор">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="robotCleanerCB" mnemonicParsing="false" text="Робот-пылесос">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="timeCB" mnemonicParsing="false" text="Часы">
+                            <font>
+                                <Font name="Ink Free" size="24.0" />
+                            </font>
+                        </CheckBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+      <Pane layoutX="1354.0" layoutY="478.0" prefHeight="99.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="200.0" layoutX="-4.0">
+               <image>
+                  <Image url="@../Pictures/Rooms/BRTemperature.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="28.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Загрязнённость" textAlignment="CENTER" wrappingWidth="140.0">
+               <font>
+                  <Font name="Ink Free" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="8.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%" textAlignment="CENTER" wrappingWidth="32.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="141.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%" textAlignment="CENTER" wrappingWidth="52.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="pollutionLabel" layoutX="18.0" layoutY="46.0" prefHeight="26.0" prefWidth="166.0">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="tempPane" layoutX="1349.0" layoutY="584.0" prefHeight="195.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="195.0" fitWidth="200.0" layoutX="1.0">
+               <image>
+                  <Image url="@../Pictures/Rooms/BRTemperature.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="28.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура" textAlignment="CENTER" wrappingWidth="140.0">
+               <font>
+                  <Font name="Ink Free" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="51.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность" textAlignment="CENTER" wrappingWidth="95.0">
+               <font>
+                  <Font name="Ink Free" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50°C" textAlignment="CENTER" wrappingWidth="52.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="12.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0°C" textAlignment="CENTER" wrappingWidth="32.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="12.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0%" textAlignment="CENTER" wrappingWidth="32.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="148.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100%" textAlignment="CENTER" wrappingWidth="52.0">
+               <font>
+                  <Font name="Ink Free" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="temperatureLabel" layoutX="23.0" layoutY="49.0" prefHeight="26.0" prefWidth="166.0">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="humidifierLabel" layoutX="24.0" layoutY="143.0" prefHeight="26.0" prefWidth="166.0">
+               <font>
+                  <Font name="Ink Free" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+        <Button fx:id="devicesButton" alignment="BASELINE_CENTER" layoutX="30.0" layoutY="804.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="260.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Устройства" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="saveSettingsButton" alignment="BASELINE_CENTER" layoutX="1318.0" layoutY="804.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="260.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Сохранить" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="supportButton" layoutX="685.0" layoutY="795.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Служба поддержки" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="backButton" layoutX="449.0" layoutY="834.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="← Назад" textFill="#2f5597" underline="true">
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <Button fx:id="profileButton" layoutX="1022.0" layoutY="834.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Профиль →" textFill="#2f5597" underline="true">
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="906.0" layoutY="7.0">
+            <image>
+                <Image url="@../Pictures/BlueStripe.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="568.0" layoutY="49.0">
+            <image>
+                <Image url="@../Pictures/UnderBlueStripe.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="674.0" layoutY="7.0" text="Ваша комната" textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="40.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="781.0" layoutY="846.0">
+            <image>
+                <Image url="@../Pictures/icon-support.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

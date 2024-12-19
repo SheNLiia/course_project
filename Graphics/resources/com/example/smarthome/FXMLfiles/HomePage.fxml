@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome.HomePageController">
+    <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0">
+         <image>
+            <Image url="@../Pictures/bg.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="registrationButton" alignment="BASELINE_CENTER" cache="true" cacheHint="SPEED" layoutX="396.0" layoutY="403.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="384.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Регистрация" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="30.0" />
+            </font>
+        </Button>
+        <Button fx:id="authenticationButton" alignment="BASELINE_CENTER" cache="true" cacheHint="SPEED" layoutX="840.0" layoutY="403.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="384.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Авторизация" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="30.0" />
+            </font>
+        </Button>
+        <Label layoutX="583.0" layoutY="140.0" text="Добро пожаловать!" textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="55.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="999.0" layoutY="140.0">
+            <image>
+                <Image url="@../Pictures/BlueStripe.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="454.0" layoutY="215.0">
+            <image>
+                <Image url="@../Pictures/UnderBlueStripe.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="114.0" fitWidth="102.0" layoutX="529.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Pictures/Password.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="95.0" layoutX="995.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Pictures/login.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="supportButton" layoutX="681.0" layoutY="769.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Служба поддержки" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="26.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="777.0" layoutY="820.0">
+            <image>
+                <Image url="@../Pictures/icon-support.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

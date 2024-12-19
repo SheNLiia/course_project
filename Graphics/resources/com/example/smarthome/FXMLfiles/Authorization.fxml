@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+            prefWidth="1600.0" style="-fx-background-size: cover; -fx-background-position: center;"
+            xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.smarthome.AuthorizationController">
+    <children>
+        <ImageView fitHeight="900.0" fitWidth="1600.0">
+            <image>
+                <Image url="@../Pictures/bg.jpg"/>
+            </image>
+        </ImageView>
+        <TextField fx:id="loginField" layoutX="664.0" layoutY="343.0" prefHeight="46.0" prefWidth="280.0"/>
+        <PasswordField fx:id="passwordField" layoutX="664.0" layoutY="448.0" prefHeight="46.0" prefWidth="280.0"/>
+        <Button fx:id="singInButton" alignment="BASELINE_CENTER" layoutX="672.0" layoutY="562.0" mnemonicParsing="false"
+                prefHeight="75.0" prefWidth="255.0"
+                style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;"
+                text="ВОЙТИ" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579"/>
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="26.0"/>
+            </font>
+        </Button>
+        <Button fx:id="registrationButton" layoutX="542.0" layoutY="750.0" mnemonicParsing="false"
+                style="-fx-background-color: transparent;" text="Регистрация" textFill="#2f5597" underline="true">
+            <font>
+                <Font name="Ink Free" size="26.0"/>
+            </font>
+        </Button>
+        <Button fx:id="forgotPassButton" layoutX="871.0" layoutY="750.0" mnemonicParsing="false"
+                style="-fx-background-color: transparent;" text="Забыли пароль?" textFill="#2f5597" underline="true">
+            <font>
+                <Font name="Ink Free" size="26.0"/>
+            </font>
+        </Button>
+        <Label layoutX="624.0" layoutY="140.0" text="Вход в систему" textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="55.0"/>
+            </font>
+        </Label>
+        <Label layoutX="664.0" layoutY="307.0" text="Логин" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="664.0" layoutY="412.0" text="Пароль" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="35.0" fitWidth="135.0" layoutX="950.0" layoutY="148.0">
+            <image>
+                <Image url="@../Pictures/BlueStripe.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="135.0" layoutX="517.0" layoutY="196.0">
+            <image>
+                <Image url="@../Pictures/UnderBlueStripe.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="errorLabel" layoutX="671.0" layoutY="670.0" prefHeight="20.0" prefWidth="267.0"
+               textAlignment="CENTER" textFill="red" visible="false">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Button fx:id="supportButton" layoutX="682.0" layoutY="792.0" mnemonicParsing="false"
+                style="-fx-background-color: transparent;" text="Служба поддержки" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="26.0"/>
+            </font>
+        </Button>
+        <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="778.0" layoutY="843.0">
+            <image>
+                <Image url="@../Pictures/icon-support.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

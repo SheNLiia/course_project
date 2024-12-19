@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
+            prefWidth="600.0" style="-fx-background-size: cover; -fx-background-position: center;"
+            xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.smarthome.SupportController">
+    <children>
+        <ImageView fitHeight="302.0" fitWidth="602.0" layoutX="-2.0" layoutY="-2.0">
+            <image>
+                <Image url="@../Pictures/bg.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="thxSupportButton" alignment="CENTER" layoutX="216.0" layoutY="214.0" mnemonicParsing="false"
+                prefHeight="49.0" prefWidth="169.0"
+                style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;"
+                text="Спасибо!" textAlignment="CENTER" textFill="#2f5597">
+            <effect>
+                <DropShadow height="12.0" radius="5.5" width="12.0">
+                    <color>
+                        <Color opacity="0.6000000238418579"/>
+                    </color>
+                </DropShadow>
+            </effect>
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+        <Label layoutX="137.0" layoutY="14.0" text="Служба поддержки" textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="42.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="28.0" fitWidth="102.0" layoutX="452.0" layoutY="14.0">
+            <image>
+                <Image url="@../Pictures/BlueStripe.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="26.0" fitWidth="116.0" layoutX="36.0" layoutY="59.0">
+            <image>
+                <Image url="@../Pictures/UnderBlueStripe.png"/>
+            </image>
+        </ImageView>
+        <Button alignment="CENTER" layoutX="-15.0" layoutY="85.0" mnemonicParsing="false" prefHeight="49.0"
+                prefWidth="631.0" style="-fx-background-color: transparent;"
+                text="По вопросам, касающихся программы звоните по номеру:" textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="24.0"/>
+            </font>
+        </Button>
+        <Button alignment="CENTER" layoutX="94.0" layoutY="119.0" mnemonicParsing="false" prefHeight="73.0"
+                prefWidth="409.0" style="-fx-background-color: transparent;" text="matatova.ee@bk.ru"
+                textAlignment="CENTER" textFill="#2f5597">
+            <font>
+                <Font name="Ink Free" size="36.0"/>
+            </font>
+        </Button>
+        <Label fx:id="warningLabel" layoutX="193.0" layoutY="271.0" prefHeight="1.0" prefWidth="216.0"
+               textAlignment="CENTER" textFill="red">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

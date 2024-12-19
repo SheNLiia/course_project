@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthome.ChoosingRoom2Controller">
+    <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0">
+         <image>
+            <Image url="@../Pictures/bg.jpg" />
+         </image>
+      </ImageView>
+        <ImageView cache="true" fitHeight="340.0" fitWidth="640.0" layoutX="160.0" layoutY="242.0">
+            <image>
+                <Image url="@../Pictures/Rooms/FullSecondRoomPreview.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="myRoomButton" alignment="BASELINE_CENTER" layoutX="307.0" layoutY="624.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="346.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Моя комната" textFill="#2f5597">
+         <effect>
+            <DropShadow height="12.0" radius="5.5" width="12.0">
+               <color>
+                  <Color opacity="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="choosingRoomButton" alignment="BASELINE_CENTER" layoutX="1014.0" layoutY="624.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="346.0" style="-fx-border-color: #2F528F; -fx-background-color: #ddeaf7; -fx-background-radius: 150px; -fx-border-radius: 150px; -fx-border-insets: -1px;" text="Выбрать другую комнату" textFill="#2f5597">
+         <effect>
+            <DropShadow height="12.0" radius="5.5" width="12.0">
+               <color>
+                  <Color opacity="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="profileButton" layoutX="741.0" layoutY="732.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="← Профиль" textFill="#2f5597" underline="true">
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="557.0" layoutY="64.0" text="Выбор другой комнаты" textAlignment="CENTER" textFill="#2f5597">
+         <font>
+            <Font name="Ink Free" size="55.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="1064.0" layoutY="76.0">
+         <image>
+            <Image url="@../Pictures/BlueStripe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="128.0" layoutX="460.0" layoutY="126.0">
+         <image>
+            <Image url="@../Pictures/UnderBlueStripe.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1064.0" layoutY="297.0" prefHeight="205.0" prefWidth="245.0">
+         <children>
+            <ImageView fitHeight="204.0" fitWidth="238.0">
+               <image>
+                  <Image url="@../Pictures/Rooms/BRTemperature.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="194.0" fitWidth="199.0" layoutX="18.0">
+               <image>
+                  <Image url="@../Pictures/Rooms/BackRForMenu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="160.0" fitWidth="166.0" layoutX="41.0" layoutY="22.0">
+               <image>
+                  <Image url="@../Pictures/Rooms/AddNewRoom.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="supportButton" layoutX="705.0" layoutY="799.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Служба поддержки" textFill="#2f5597">
+         <font>
+            <Font name="Ink Free" size="26.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="801.0" layoutY="850.0">
+         <image>
+            <Image url="@../Pictures/icon-support.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
